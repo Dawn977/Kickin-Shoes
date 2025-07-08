@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equals Kape Coffee Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation + Logo + Login & Cart Buttons -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Equals.jpg" alt="Equals Kape Logo">
+      <span class="logo-text">Equals Kape</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Products</a></li>
+      <li><a href="#contacts">Contact Us</a></li>
+    </ul>
+    <div class="top-actions">
+      <button class="login-btn" id="login-btn" tabindex="0">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:6px;">
+          <circle cx="12" cy="8" r="4" stroke="#fff" stroke-width="2" fill="none"/>
+          <path d="M4 20c0-3.3137 3.134-6 8-6s8 2.6863 8 6" stroke="#fff" stroke-width="2" fill="none"/>
+        </svg>
+        <span>Login</span>
+      </button>
+      <button class="cart-btn" id="top-cart-btn" tabindex="0">🛒 Cart (0)</button>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <header class="hero-section" id="home">
+    <div class="overlay">
+      <h1>Welcome to <span class="highlight-coffee">Equals Kape</span></h1>
+      <p class="hero-sub">Where quality coffee meets community values</p>
+      <a href="#menu" class="hero-btn">View Menu</a>
+    </div>
+  </header>
+
+ <section class="menu-section" id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-items">
+    <!-- Coffee Classics -->
+    <div class="menu-card" data-price="100">
+      <h3>Espresso</h3>
+      <p>Strong, rich, and bold.</p>
+      <span>₱100</span>
+    </div>
+    <div class="menu-card" data-price="120">
+      <h3>Cappuccino</h3>
+      <p>Espresso with foamed milk.</p>
+      <span>₱120</span>
+    </div>
+    <div class="menu-card" data-price="130">
+      <h3>Latte</h3>
+      <p>Silky steamed milk and espresso.</p>
+      <span>₱130</span>
+    </div>
+    <div class="menu-card" data-price="110">
+      <h3>Americano</h3>
+      <p>Espresso diluted with hot water.</p>
+      <span>₱110</span>
+    </div>
+    <!-- Cold and Blended -->
+    <div class="menu-card" data-price="140">
+      <h3>Cold Brew</h3>
+      <p>Slow-steeped for a smoother finish.</p>
+      <span>₱140</span>
+    </div>
+    <div class="menu-card" data-price="150">
+      <h3>Caramel Frappé</h3>
+      <p>Ice-blended coffee with caramel.</p>
+      <span>₱150</span>
+    </div>
+    <div class="menu-card" data-price="145">
+      <h3>Mocha Iced Latte</h3>
+      <p>Chocolate meets coffee over ice.</p>
+      <span>₱145</span>
+    </div>
+    <!-- Non-Coffee -->
+    <div class="menu-card" data-price="120">
+      <h3>Hot Chocolate</h3>
+      <p>Rich, creamy cocoa goodness.</p>
+      <span>₱120</span>
+    </div>
+    <div class="menu-card" data-price="135">
+      <h3>Matcha Latte</h3>
+      <p>Earthy green tea blend.</p>
+      <span>₱135</span>
+    </div>
+    <div class="menu-card" data-price="125">
+      <h3>Chai Tea</h3>
+      <p>Spiced black tea and milk.</p>
+      <span>₱125</span>
+    </div>
+    <!-- Add-Ons -->
+    <div class="menu-card" data-price="30">
+      <h3>Extra Espresso Shot</h3>
+      <p>Boost your drink.</p>
+      <span>₱30</span>
+    </div>
+    <div class="menu-card" data-price="20">
+      <h3>Oat or Almond Milk</h3>
+      <p>Dairy-free alternative.</p>
+      <span>₱20</span>
+    </div>
+    <!-- New Breads & Pastries Section -->
+    <div class="menu-card" data-price="60">
+      <h3>Croissant</h3>
+      <p>Flaky, buttery French pastry—perfect for breakfast or snack.</p>
+      <span>₱60</span>
+    </div>
+    <div class="menu-card" data-price="55">
+      <h3>Pandecoco</h3>
+      <p>Soft Filipino bread with sweet coconut filling.</p>
+      <span>₱55</span>
+    </div>
+    <div class="menu-card" data-price="65">
+      <h3>Cinnamon Roll</h3>
+      <p>Sweet roll with cinnamon and sugar, topped with glaze.</p>
+      <span>₱65</span>
+    </div>
+    <div class="menu-card" data-price="50">
+      <h3>Ensaymada</h3>
+      <p>Soft, fluffy bread topped with butter, sugar, and cheese.</p>
+      <span>₱50</span>
+    </div>
+    <div class="menu-card" data-price="40">
+      <h3>Spanish Bread</h3>
+      <p>Classic Filipino bread roll with sweet buttery filling.</p>
+      <span>₱40</span>
+    </div>
+    <div class="menu-card" data-price="70">
+      <h3>Chocolate Danish</h3>
+      <p>Buttery, multi-layered pastry filled with chocolate.</p>
+      <span>₱70</span>
+    </div>
+    <!-- End of Breads & Pastries -->
+  </div>
+</section>
+
+  <section class="features-section">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+      <div class="feature">
+        <h4>🧾 Digital Orders</h4>
+        <p>Customers can order ahead online.</p>
+      </div>
+      <div class="feature">
+        <h4>📱 Mobile Control</h4>
+        <p>Smart notifications for pickup ready.</p>
+      </div>
+      <div class="feature">
+        <h4>📊 Owner Dashboard</h4>
+        <p>Track sales, inventory, and feedback.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 NiJi Street, Coffee City, PH</p>
+    <p>📞 0999-888-7777</p>
+    <p>✉️ equalskape@email.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Equals Kape. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
